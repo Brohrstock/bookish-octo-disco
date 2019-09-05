@@ -1,0 +1,151 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="shortcut icon" href="img/logo.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Llamado a CDN Boostrap y sus bibliotecas-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <!-- Fin CDN -->
+        <!--Boton Buscar Script-->
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <!--Fin buscar-->
+        <!--Link Flexbox-->
+        <link rel="stylesheet" type="text/css" href="css/flexboxgrid.css">
+        <style>
+          /* Para mejorar legibilidad del texto en las diapositivas, agregamos un
+          color negro de fondo semi-transparente al cuadro de leyenda */
+          .carousel-caption{
+          background: rgba(0,0,0,0.5);
+          }
+          </style>
+          <!--llamamos a  las font family de Google a utilizar en la pagina-->
+          <link href="https://fonts.googleapis.com/css?family=Abel|Dancing+Script|Indie+Flower|Pacifico&display=swap" rel="stylesheet">
+          <!--Fin Google Font-->
+
+    </head>
+    <body>
+        <!--contacto barra Superior-->
+        <div class="navbar navbar-expand-sm bg-light navbar-light">
+            <!--div para el logo-->
+                <div class="navbar-brand">
+                        <a href="index.html"><img src="img/logo.png" alt="Logo" width="7%"></a>
+                    </div>
+            <!--Fin logo-->
+            <!--Inicio celdas para el nav-->
+            <ul class="navbar-nav mr">
+                <li class="nav-item-active">
+                    <a href="#" class="nav-link">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">Acerca de</a>  
+                </li>
+                <li class="nav-item active">
+                    <a href="#" class="nav-link">Galeria</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="#" class="nav-link">Personajes</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="#" class="nav-link">Equipo</a>
+                </li>
+                <!--boton para llamar, Variable tel para llamar directo del celular-->
+                <li class="nav-item active">
+                  <a href="tel:+56987654321" class="btn btn-outline-success">Llamanos!!</a>
+                </li>
+                <!--fin tel-->
+                <!--boton para enviar correo,atributo mailto para direccionarlo directo con gestor de correo-->
+                <li class="nav-item-active">
+                    <a href="mailto:correo@smash.cl" class="btn btn-outline-danger">Correo</a>
+                </li>
+                <!--fin mailto-->
+            </ul>
+            <!--Fin celdas nav-->
+            <!--Boton Buscar-->
+            <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar..." aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+            <!--fin buscar-->
+        </div>
+        <!--Fin contacto barra superior-->
+        <!--banner-->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+              
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" >
+                  <div class="item active">
+                    <img class="img-responsive center-block" alt="Imagen" src="https://areajugones.sport.es/wp-content/uploads/2019/01/SI_Wii_TheLegendOfZeldaTwilightPrincess_image1600w.jpg.webp" alt="Zelda" width="640px" height="480px">
+                    <div class="carousel-caption">
+                      <h3>The Legend of Zelda</h3>
+                      <p>Twilight Princess</p>
+                      </div>
+                  </div>
+              
+                  <div class="item">
+                    <img class="img-responsive center-block" alt="Imagen" src="https://areajugones.sport.es/wp-content/uploads/2019/09/Gears-5_Kait_Del_Jack-780x440.jpg.webp" alt="Super Smash Bross" width="640px" height="480px">
+                    <div class="carousel-caption">
+                      <h3>Gears 5</h3>
+                      <p>Kait de Jack</p>
+                      </div>
+                  </div>
+              
+                  <div class="item">
+                    <img class="img-responsive center-block" alt="Imagen" src="https://areajugones.sport.es/wp-content/uploads/2019/07/Assassins-Creed-Odyssey-1.jpg.webp" alt="Assassin's Creed" width="640px" height="480px" >
+                    <div class="carousel-caption">
+                      <h3>Assassin Creed</h3>
+                      <p>Odyssey</p>
+                      </div>
+                  </div>
+                </div>
+              
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                  <span class="sr-only">Anterior</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                  <span class="sr-only">Siguiente</span>
+                </a>
+              </div>
+        <!--Fin-->
+        <!--Inicio Barra Titulo-->
+        <div class="container">
+            <h1 id="titulo" style="font-family: 'Indie Flower', cursive; text-align:center;">Bienvenidos a <U><strong>SMASH</strong></U></h1>
+        </div>
+        <!--Fin Barra titulo-->
+        <!--Inici Contenido Texto-->
+        <div>
+          <div class="container-fluid">
+              <div class="col-xs-12 col-lg-6">
+                  <h2 class="Texto">Acerca de</h2>
+                  <p class="Parrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                      reprehenderit in voluptate velit esse cillum dolore eu 
+                      fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+              </div>
+              <div class="col-xs-12 col-lg-6 center-lg center-xs">
+                  <img class="paddingTop paddingBottom" src="img/chrome.jpg" alt="AC" width="50%">
+              </div>
+          </div>
+      </div>
+      <!--Fin Contenido Texto-->
+      <footer>
+        <p class="footer" style="font-family: pasifico,cursive; background-color: rgba(0,0,0,0.5); text-align: center;">Todos los derechos Reservados. <strong>SMASH 2019</strong></p>
+      </footer>
+       </body>
+</html>
