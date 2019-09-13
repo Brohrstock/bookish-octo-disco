@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="shortcut icon" href="img/logo.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Llamado a CDN Boostrap y sus bibliotecas-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <!-- Fin CDN -->
+        
+        
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+        <!--Link Flexbox-->
+        <link rel="stylesheet" type="text/css" href="css/flexboxgrid.css">
+          <!--llamamos a  las font family de Google a utilizar en la pagina-->
+          <link href="https://fonts.googleapis.com/css?family=Abel|Dancing+Script|Indie+Flower|Pacifico&display=swap" rel="stylesheet">
+          <!--Fin Google Font-->
+
+    </head>
+    <body>
+        <!--contacto barra Superior-->
+        <div class="navbar navbar-expand-sm navbar-expand-lg bg-light navbar-light justify-content-center mx-auto">
+            <!--div para el logo-->
+                <div class="navbar-brand">
+                        <a href="index.html"><img src="img/logo.png" alt="Logo" width="30" height="30"></a>
+                    </div>
+            <!--Fin logo-->
+            <!--Inicio celdas para el nav-->
+            <ul class="navbar-nav navbar-collapse">
+                <li class="nav-item-active">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">Acerca de</a>  
+                </li>
+                <li class="nav-item active">
+                    <a href="#" class="nav-link">Galeria</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="#" class="nav-link">Personajes</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="#" class="nav-link">Contacto<span class="sr-only">(current)</span></a>
+                </li>
+                <!--boton para llamar, Variable tel para llamar directo del celular-->
+                <li class="nav-item active">
+                  <a href="tel:+56987654321" class="btn btn-outline-success">Telefono</a>
+                </li>
+                <!--fin tel-->
+                <!--boton para enviar correo,atributo mailto para direccionarlo directo con gestor de correo-->
+                <li class="nav-item-active">
+                    <a href="mailto:correo@smash.cl" class="btn btn-outline-danger">Correo</a>
+                </li>
+                <!--fin mailto-->
+            </ul>
+            <!--Fin celdas nav-->
+            <!--Boton Buscar-->
+            <form class="form-inline my-2 my-lg-0 justify-content-center">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar..." aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+            <!--fin buscar-->
+        </div>
+        <!--Fin contacto barra superior-->
+        <form class="container justify-content-center">
+            <div class="form-group container-small">
+              <label>Email</label>
+              <input type="email" class="form-control" placeholder="Direccion de Correo Electronico">
+              <small class="form-text text-muted">Solo para fines de contacto.</small>
+            </div>
+            <div class="form-group container-small">
+                <label>Telefono</label>
+                <input type="tel" class="form-control" placeholder="+56987654321">
+              </div>
+            <div class="form-group container-small">
+              <label>Nombre</label>
+              <input type="text" class="form-control" placeholder="Nombre">
+            </div>
+            <div class="form-group container-small">
+                <label >Comentarios</label>
+                <textarea class="form-control" rows="4" cols="20" placeholder="Sugerencias, reclamos o comentarios."></textarea>
+              </div>
+            <div class="form-check container-small">
+              <input type="checkbox" class="form-check-input">
+              <label class="form-check-label col">Recibir noticias</label>
+            </div>
+            <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+            
+        </form>
+        <footer>
+            <p class="footer" style="position: relative; font-family: pasifico,cursive; height: 50px; background-color: rgba(0,0,0,0.5); text-align: center;">Todos los derechos Reservados. <strong>SMASH 2019</strong></p>
+        </footer>
+        </body>
+</html>
