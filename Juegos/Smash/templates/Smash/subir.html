@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block head %}
+    <title>Subir Imagen</title>
+{% endblock head %}
+
+{% block content %}
+    <!--Jumbotron es el estilo de fondo gris que abarca todo los campos-->
+    <div class="jumbotron">
+        <h1>Subir Imagenes</h1>
+        <h3>Ingrese el nombre y la imagen</h3>
+        <form enctype="multipart/form-data" method="POST">
+            {% csrf_token %}
+            {{ image_form.as_p }}
+            <button type="submit" class="btn btn-primary">Subir</button>
+        </form>
+    </div>
+{% endblock content %}

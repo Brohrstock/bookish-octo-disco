@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{% load static %}
+    
+<html>
+
+    <link href="..\..\static\Smash\estilo.css" rel="stylesheet" >
+    {% block head %}
+    <title>Smash!</title>
+    {% endblock head %}
+    {% block content %}
+    <body>
+    <!--banner-->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" >
+                <div class="item active">
+                <img class="img-responsive center-block" alt="Imagen" src = "{{'static/img/chrome.jpg'}}" alt="Chrome" width="640px" height="480px">
+                </div>
+            
+                <div class="item">
+                <img class="img-responsive center-block" alt="Imagen" src = "{{'static/img/joker.png'}}" alt="Joker" width="640px" height="480px">
+                </div>
+            
+                <div class="item">
+                <img class="img-responsive center-block" alt="Imagen" src = "{{'static/img/Ridley.jpg'}}" alt="Ridley" width="640px" height="480px" >
+                </div>
+            </div>
+            
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+            </div>
+    <!--Fin-->
+    <!--Inicio Barra Titulo-->
+    
+    <!--Fin Barra titulo-->
+    <!--Inici Contenido Texto-->
+    <div>
+        <div class="container-fluid">
+            <div class="col-xs-12 col-lg-6">
+                <h2 class="Texto">Banjo Kazooie</h2>
+                <p class="Parrafo">El pase de temporada de Super Smash Bros. Ultimate se actualiza con un nuevo personaje, Banjo y Kazooie, que viene acompañado de los movimientos más singulares y especiales de su juego. Este iconico personaje de la compañia Rare ( misma compañia que desarrollo los juegos de donkey kong country) se une como uno de los personajes mas esperados entre los fanaticos del juego</p>
+            </div>
+            <div class="col-xs-12 col-lg-6 center-lg center-xs">
+                <img class="paddingTop paddingBottom mt-3" src = "{{'static/img/Banjo.jpeg'}}" alt="banjo" width="100%">
+            </div>
+            
+        </div>
+        <hr>
+        <div class="container-fluid">
+            <div class="col-xs-12 col-lg-6 center-lg center-xs">
+                <img class="paddingTop paddingBottom mt-3" src = "{{'static/img/ver5.jpg'}}" alt="verion 5" width="100%">
+            </div>
+            <div class="col-xs-12 col-lg-6">
+                <h2 class="Texto">Super Smash Bros. Ultimate - Actualización versión 5.0.0</h2>
+                <p class="Parrafo">Ajustes a luchadores y objetos, todo lo que necesitas saber en el siguiente <a href="https://es-americas-support.nintendo.com/app/answers/detail/a_id/45606/~/super-smash-bros.-ultimate---actualizaci%C3%B3n-versi%C3%B3n-5.0.0%3A-ajustes-de-luchadores">link</a></p>
+            </div>
+        </div>
+        <hr>
+        <div class="container-fluid">
+            
+            <div class="col-xs-12 col-lg-6">
+                <h2 class="Texto">Terry Bogard</h2>
+                <p class="Parrafo">Terry Bogard, de la serie FATAL FURY, se une al plantel de Super Smash Bros. Ultimate… En una presentación retransmitida en directo, Masahiro Sakurai, el director de Super Smash Bros. Ultimate, ha mostrado con todo detalle el nuevo luchador. El pack del aspirante 4: Terry Bogard ya está disponible, tanto como parte del Fighters Pass de Super Smash Bros. Ultimate, como en forma de set por separado.</p>
+            </div>
+            <div class="col-xs-12 col-lg-6 center-lg center-xs">
+                <img class="paddingTop paddingBottom mt-3 mb-3" src = "{{'static/img/Terry.jfif'}}" alt="Terry" width="100%">
+            </div>
+        </div>
+    </div>
+</body>   
+    <!--Fin Contenido Texto-->
+    {% endblock content %}
+</html>
+    

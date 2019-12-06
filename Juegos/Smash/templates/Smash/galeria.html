@@ -1,0 +1,128 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<html>
+    {% block head %}
+    <head>
+        <title>Galeria</title>
+    </head>
+    {% endblock head %}
+    {% block content %}
+    <body class="">
+        <div class="row mb-3">
+            <div class="col-lg-3 col-md-4 col-sm-6 ">
+                <div class="card" style="width: 21rem; height: 0 auto;">
+                    <img class="card-img-top"  src = "{{'static/img/Terry.jfif'}}" alt="chrom">
+                    <div class="card-body">
+                        <h5 class="card-title">Terry Bogard</h5>
+                        <p class="card-text">King of Fighters trae su estilo de pelea</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card" style="width: 21rem; height: 0 auto;">
+                    <img class="card-img-top" src = "{{'static/img/banjo2.png'}}" alt="banjo2">
+                    <div class="card-body">
+                        <h5 class="card-title">Banjo Kazooie</h5>
+                        <p class="card-text">Llegan a causar chaos</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card" style="width: 21rem; height: 0 auto;">
+                    <img class="card-img-top" src = "{{'static/img/fanart1.jpg'}}" alt="fan1">
+                    <div class="card-body">
+                        <h5 class="card-title">FanArt Destacado</h5>
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card" style="width: 21rem; height: 0 auto;">
+                    <img class="card-img-top" src = "{{'static/img/fanart2.jpg'}}" alt="fan2">
+                    <div class="card-body">
+                        <h5 class="card-title">FanArt</h5>
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-sm-3">
+                <div class="card" style="width: 21rem; height: 0 auto;">
+                    <img class="card-img-top" src = "{{'static/img/hero.jpg'}}" alt="hero">
+                    <div class="card-body">
+                        <h5 class="card-title">The Hero</h5>
+                        <p class="card-text">Dragon quest se une al repertorio de juegos</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" style="width: 21rem;">
+                    <img class="card-img-top" src = "{{'static/img/incine.jpg'}}" alt="incine">
+                    <div class="card-body">
+                        <h5 class="card-title">Incineroar</h5>
+                        <p class="card-text">Nuevo pokemon se une a la lucha</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" style="width: 21rem;">
+                    <img class="card-img-top" src = "{{'static/img/joker.png'}}" alt="joker">
+                    <div class="card-body">
+                        <h5 class="card-title">Joker</h5>
+                        <p class="card-text">Se une para robarse el escenario</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" style="width: 21rem;">
+                    <img class="card-img-top" src = "{{'static/img/ridley.jpg'}}" alt="ridley">
+                    <div class="card-body">
+                        <h5 class="card-title">Ridley</h5>
+                        <p class="card-text">despues de años porfin es jugable</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-sm-3">
+                <div class="card" style="width: 21rem;">
+                    <img class="card-img-top" src = "{{'static/img/simon.jpg'}}" alt="simon">
+                    <div class="card-body">
+                        <h5 class="card-title">Simon</h5>
+                        <p class="card-text">Los belmont traen sus trucos a la batalla</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" style="width: 21rem;">
+                    <img class="card-img-top" src = "{{'static/img/SSB.jpg'}}" alt="SSB">
+                    <div class="card-body">
+                        <h5 class="card-title">Arte Personajes Smash</h5>
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" style="width: 21rem;">
+                    <img class="card-img-top" src = "{{'static/img/piranha.jpg'}}" alt="piranha">
+                    <div class="card-body">
+                        <h5 class="card-title">Piranha Plant</h5>
+                        <p class="card-text">Sakurai demostrando que todo peude ser un personaje</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" style="width: 21rem;">
+                    <img class="card-img-top" src = "{{'static/img/megaman.jpg'}}" alt="chrom">
+                    <div class="card-body">
+                        <h5 class="card-title">Megaman</h5>
+                        <p class="card-text">Vuelve el software favorito de todos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </body>
+        {% endblock content %}
+</html>

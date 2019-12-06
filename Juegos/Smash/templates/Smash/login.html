@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+    <link href="{% static 'Smash/estilo.css' %}" rel="stylesheet" >
+    <title>Login Usuario</title>
+
+{% endblock head %}
+{% block content %}
+
+<div class="login">
+    <h1 class="text-center">Iniciar Sesion</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <div class="form_group col-lg-12 text-center">
+            <label for="username">Username:</label>
+            <input type="text" class="form_control" name="username" placeholder="Nombre de usuario">
+        </div>
+        <div class="form_group text-center">
+            <label for="password">Password:</label>
+            <input type="password" class="form_control" name="password" placeholder="Password">
+        </div>
+        <div class="text-center mt-3">
+            <button type="submit" class="btn btn-primary">Iniciar Sesion</button>
+        </div>
+    </form>
+</div>
+{% endblock content %}

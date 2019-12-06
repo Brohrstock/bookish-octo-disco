@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smash!</title>
+    <link rel="shortcut icon" href="img/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Llamado a CDN Bootstrap y sus bibliotecas-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!--font family de Google a utilizar en la pagina-->
+    <link href="https://fonts.googleapis.com/css?family=Abel|Dancing+Script|Indie+Flower|Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid" style="position: relative; min-height: 100vh;">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="{% url 'Smash:index' %}">
+             <img src = "{{'static/img/logo.png'}}" width="30" height="30" class="d-inline-block" alt="logo"> Smash!</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse">
+                <!--Barra de navegacion-->
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="{% url 'Smash:contacto' %}">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'Smash:galeria' %}">Galeria</a></li>
+                    <!--Preguntar si el usuario esta autenticado para desplegar menu correspondiente-->
+                    <!--Si es que no esta logeado, despliega iniciar sesion y registrar-->
+                    {% if not request.user.is_authenticated %}
+                    <li class="nav-item"><a class="nav-link" href="{% url 'Smash:login' %}">Iniciar Sesion</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'Smash:registrar' %}">Registrar</a></li>
+                    <!--Si esta logeado, despliega logout-->
+                    {% else %}
+                    <li class="nav-item"><a class="nav-link" href="{% url 'Smash:listar_noticias' %}">Noticias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'Smash:logout' %}">Logout</a></li>
+                    {% endif %}
+                </ul>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            {% block content %}
+            
+            {% endblock content %}
+        </div>
+        <footer>
+            <div class="footer pt-5">
+                <p style="font-family: pasifico,cursive; background-color: rgba(0,0,0,0.5); text-align: center; width: auto;height: auto; position: absolute; left: 0; bottom: 0; width: 100%; color: white; background-color: gray;">Todos los derechos Reservados. <strong>SMASH 2019</strong></p>
+            </div>
+        </footer>
+    </div>
+</body>

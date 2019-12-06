@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block head %}
+    <title>Registro</title>
+{% endblock head %}
+
+{% block content %}
+    <!--Jumbotron es el estilo de fondo gris que abarca todo los campos-->
+    <div class="jumbotron">
+        <!--Preguntar si el usuario ya termino el registro-->
+        <!--Si es que ya termino, registrado es true y muestra el mensaje-->
+        {% if registrado %}
+            <h1>Registro exitoso</h1>
+        <!--Si es que no esta registrado, muestra los formularios user_form y profile_form para que sean completados-->
+        {% else %}
+            <h1>Registro</h1>
+            <h3>Ingrese los siguientes datos</h3>
+            <form enctype="multipart/form-data" method="POST">
+            {% csrf_token %}
+            <!--Form definido en el forms.py junto con views.py-->
+            {{ user_form.as_p }}
+            <button type="submit" class="btn btn-primary">Registrar</button>
+            </form>
+        {% endif %}
+    </div>
+{% endblock content %}
